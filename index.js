@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3002;
 const MONGO_URL = process.env.MONGO_URL;
-export const FE_LINK = "http://localhost:3000";
+export const FE_LINK = "https://urlshrinker.netlify.app";
 
 app.use(cors({ credentials: true, origin: `${FE_LINK}`}));
 app.use(cookieParser());
